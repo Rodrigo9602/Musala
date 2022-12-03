@@ -1,0 +1,26 @@
+<div class="cards" *ngFor="let gateway of gateways">
+  <div class="card text-center">
+    <div class="card-header">
+      {{gateway.name}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{gateway.serial}}</h5>
+      <p class="card-text">{{gateway.ipv4}}</p>
+      <div *ngFor="let device of gateway.devices">
+        <app-card [UID]="device.uid" [vendor]="device.vendor" [status]="device.status"></app-card>
+      </div>
+    </div>
+    <div class="card-footer">
+      <div *ngIf="gateway.devices.length < 10" class="btn-google m-b-20" (mouseover)="select($event, gateway)">
+        <a [routerLink]="addDevice">
+          Add Device
+        </a>
+      </div>
+      <div class="btn-google m-b-20" (mouseover)="select($event, gateway)">
+        <a [routerLink]="delDevice">
+          Delete Device
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

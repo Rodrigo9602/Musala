@@ -1,0 +1,38 @@
+{
+  "name": "gateways_manager",
+  "version": "1.0.0",
+  "description": "gateways manager for Musala Soft",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodrigo9602/Musala-Soft.git"
+  },
+  "keywords": [
+    "gateways",
+    "peripherical",
+    "devices"
+  ],
+  "author": "Rodrigo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rodrigo9602/Musala-Soft/issues"
+  },
+  "homepage": "https://github.com/Rodrigo9602/Musala-Soft#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.4",
+    "mongoose-autopopulate": "^0.16.1",
+    "uuid": "^9.0.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.1"
+  }
+}

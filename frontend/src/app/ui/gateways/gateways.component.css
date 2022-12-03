@@ -1,0 +1,30 @@
+.card{
+    width: auto;
+    display: inline-flex;    
+    margin: 15px 15px;   
+}
+.card-footer{
+    margin: auto;
+    width: 100%;  
+    display: inline-flex;
+    justify-content: space-around; 
+}
+.cards{
+    display: inline-flex;    
+    justify-content: space-around;  
+    align-items: center; 
+    margin:auto;
+}
+.btn-google{
+    width: 100%;
+}
+a{
+    color: black;
+}
+.btn-google:hover>a{
+    
+    color: aliceblue;
+}
+.btn-google{
+    margin-right: 15px;
+}
