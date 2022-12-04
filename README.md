@@ -30,7 +30,7 @@ Web application for the administration of gateways, built on the basis of javasc
 $ cd ./backend
 $ npm i #install dependencies
 # this start the service on the background
-$ sudo docker-composer up -d
+$ sudo docker-compose up -d
 $ npm start
 
 # in the root folder of the project
