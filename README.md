@@ -13,7 +13,7 @@ Web application for the administration of gateways, built on the basis of javasc
 # Main functionalities developed
 1. Creation and display of gateways storaged.
 2. Search of a specific gateway and the possibility of providing all its detailed information.
-3. Agregar o eliminar un dispositivo de una pasarela especificada.
+3. Add or delete a device from a specific gateway.
 
 ## Start guide
 
