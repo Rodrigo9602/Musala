@@ -91,9 +91,10 @@ $ npm start
 1. Implement the functionality for delete a gateway in case of being necessary.
 2. Update the ui styles.
 3. Add referencial links for about us information and other views on th frontend.
-4. Optimize the use of styles for all components
-5. Add the visualation of message from backend in case of error
+4. Optimize the use of styles for all components.
+5. Add the visualation of message from backend in case of error.
 6. Add the functionality for update the status of a single device on a specific gateway.
+7. Modify visual alerts.
  
 
 
