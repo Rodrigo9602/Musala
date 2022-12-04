@@ -9,14 +9,14 @@ export class CardComponent implements OnInit {
 @Input() UID;
 @Input() vendor=String('');
 @Input() status=String('');
-public date;
+@Input() date;
 
   constructor(
     
   ) { 
     this.UID=0;
+    this.date=new Date();
     
-    this.date= new Date();
   }
 
   ngOnInit(): void {

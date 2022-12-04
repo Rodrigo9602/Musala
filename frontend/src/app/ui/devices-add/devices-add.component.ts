@@ -35,14 +35,13 @@ export class DevicesAddComponent implements OnInit {
     
     
   }
-  onSubmit(){ 
-    alert("Info sended");
+  onSubmit(){    
     this._gatewayService.addDevice(this.serialNumber,this.device).subscribe(
       res=>{
-        console.log(res);
+       alert(res.message);       
       },
       err=>{
-        console.log(err);
+        alert(err.message);
       }
     )
   }

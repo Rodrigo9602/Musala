@@ -1,13 +1,13 @@
 <div class="cards" *ngFor="let gateway of gateways">
   <div class="card text-center">
     <div class="card-header">
-      {{gateway.name}}
+      Nombre: {{gateway.name}}
     </div>
     <div class="card-body">
-      <h5 class="card-title">{{gateway.serial}}</h5>
-      <p class="card-text">{{gateway.ipv4}}</p>
+      <h5 class="card-title">Serial: {{gateway.serial}}</h5>
+      <p class="card-text">IPV4: {{gateway.ipv4}}</p>
       <div *ngFor="let device of gateway.devices">
-        <app-card [UID]="device.uid" [vendor]="device.vendor" [status]="device.status"></app-card>
+        <app-card [UID]="device.uid" [vendor]="device.vendor" [status]="device.status" [date]="device.date"></app-card>
       </div>
     </div>
     <div class="card-footer">

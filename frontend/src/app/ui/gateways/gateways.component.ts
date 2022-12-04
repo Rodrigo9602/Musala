@@ -43,7 +43,7 @@ public delDevice;
         this.gateways = res.gateways;
       },
       err=>{
-        console.log(err);
+       alert(err.message);
       }
     )
     

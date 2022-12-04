@@ -31,11 +31,11 @@ public devices:Device[];
     else{
       alert('Formulario enviado');
       this._gatewayService.save(this.gateway).subscribe(
-        res=>{
-          console.log(res);
+        res=>{       
+          console.log(res.message);
         },
         err=>{
-          alert(err);
+          alert(err.message);
         }
       )
     }

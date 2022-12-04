@@ -23,12 +23,11 @@ export class SearchComponent implements OnInit {
   }
   onSubmit(){
     this._gatewayService.getGatewayBySerial(this.serialNumber).subscribe(
-      res=>{
-        console.log(res);
-        this.gateway=res.gateway[0];
+      res=>{        
+        this.gateway=res.gateway[0];        
       },
       err=>{
-        alert(err);
+        alert(err.message);
       }
     )
   }

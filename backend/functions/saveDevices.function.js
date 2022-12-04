@@ -2,7 +2,7 @@
 
 var validator = require('validator');
 var Device = require('../models/device.model');
-var getUID = require('../functions/create_uid.fcn');
+var getUID = require('./create_uid.function');
 
 const saveDevices =  async (devices) => {
     
@@ -15,7 +15,7 @@ const saveDevices =  async (devices) => {
             var vendorValidate = !validator.isEmpty(devices[i].vendor);
             var statusValidate = !validator.isEmpty(devices[i].status);
             } catch(error){
-                return error.message || 'Validation error';
+                return [error.message];
             }
             if(vendorValidate && statusValidate){       
                 let device = new Device();              
@@ -31,7 +31,7 @@ const saveDevices =  async (devices) => {
                 createdDevices.push(await device.save());
                       
             }else{
-                return 'Missing data from device '+(i+1);
+                return ['Missing data'];
             }          
         }
        

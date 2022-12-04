@@ -30,10 +30,10 @@ export class DevicesDelComponent implements OnInit {
     alert("Data sended");
     this._gatewayService.delDevices(this.serialNumber, this.UID).subscribe(
       res=>{
-        console.log(res);
+        alert(res.message);
       },
       err=>{
-        console.log(err);
+        alert(err.message);
       }
     )
   }
