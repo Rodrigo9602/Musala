@@ -16,12 +16,29 @@ Web application for the administration of gateways, built on the basis of javasc
 3. Agregar o eliminar un dispositivo de una pasarela especificada.
 
 ## Start guide
-### Installation requirements
-1.
-2.
-3.
-4.
-5.
+
+### Installation requierements
+1. Node 16
+2. npm 8.19.2
+3. Docker 20.10.21
+
+
+### Installation procedure
+ ```bash
+# in the root folder of the project 
+# on mac or Linux
+$ cd ./backend
+$ npm i #install dependencies
+# this start the service on the background
+$ sudo docker-composer up -d
+$ npm start
+
+# in the root folder of the project
+# on mac or Linux
+$ cd ./frontend
+$ npm i #install dependencies
+$ npm start
+ ```
 
 
 
@@ -35,12 +52,7 @@ Web application for the administration of gateways, built on the basis of javasc
 7. Mongoose
 
 
-### Installation procedure
-1.
-2.
-3.
-4.
-5.
+
 
 
 # Code Arquitecture

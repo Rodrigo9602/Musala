@@ -1,0 +1,13 @@
+version: '3.1'
+
+service:
+  mongodb:
+    image: mongo
+    container_name: mongo-gdbs
+    ports:
+      -27017:27017
+    volumes:
+      -mongodb-data
+volumes:
+  mongodb-data:
+    driver: local
